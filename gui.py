@@ -1,5 +1,10 @@
 from functions import *
 import PySimpleGUI as pysg
+import os
+
+if not os.path.exists('todos.txt'):
+    with open('todos.txt', 'w'):
+        pass
 
 pysg.theme('DarkPurple4')
 
